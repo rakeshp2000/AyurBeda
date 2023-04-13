@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/0d1012d025.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav {
+            width: 100%;
+            height: 80px;
+            background-image: linear-gradient(#f5e2e2, #f9bdbd);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: fixed;
+        }
+        .logo img{
+            width: 230px;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+        }
+        ul li {
+            padding: 15px;
+        }
+        li a {
+            text-decoration: none;
+            color:#000000;
+            font-weight: bold;
+            padding: 5px 15px;
+            transition: 0.4s;
+        }
+        ul li a:hover {
+            color: #fff;
+            background-color: #ec7e7e;
+            border-radius: 4px ;
+        }
+        /* 1ST CONTENT */
+        #cont1 {
+            width: 100%;
+            height: 650px;
+            background-image:linear-gradient(rgba(220, 151, 151, 0.5), rgba(220, 151, 151, 0.5)), url(https://drive.google.com/uc?id=1DbpyYOt0VdTMezZaEl0MRZib39HVWMgX);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        #cont1 .left {
+            width: 50%;
+            /* background-color: darkblue; */
+            height: 400px;
+            text-align: center;
+            padding: 40px;
+        }
+        #cont1 .left h1 {
+            color: #fff;
+            text-align: justify;
+            padding-left:210px;
+            margin-top: 45px;
+            line-height: 60px;
+            font-size: 50px;
+        }
+        #cont1 .left button {
+            padding: 15px 35px;
+            border: 1px solid #eb2f2f;
+            border-radius: 20px;
+            background-color: #eb2f2f;
+            color:#fff;
+            font-weight: bold;
+            margin-top: 80px;
+            margin-left: -100px;
+            cursor: pointer;
+        }
+        #cont1 .left button:hover {
+            color: #000000;
+            background-color: #fdcbcc;
+            border: 1px solid #fdcbcc;
+            transition: 0.5s;
+            box-shadow: 20;
+        }
+        #cont1 .right {
+            width: 50%;
+            height:400px ;
+            /* background-color: indigo; */
+            padding-top: 90px;
+        }
+        /* 2ND CONTENT */
+            /* LEFT */
+        #cont2 {
+            width: 100%;
+            height: 800px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin-top: 30px;
+        }
+        #cont2 .left{
+            width: 25%;
+            height: 760px;
+            text-align: center;
+            padding-top: 90px;
+        }
+        #cont2 .left .btn1 {
+            width: 250px;
+            font-weight: bolder;
+            height: 75px;
+            background-color: #03d314;
+            border-radius: 10px;
+            border: 1px solid  #03d361;
+            margin: 10px;
+            font-size: large;
+            transition: 0.2s;
+            cursor: pointer;
+            color: #fff;
+        }
+        #cont2 .left .btn1:hover {
+            background-color: #fae5e6;
+            border:1px solid #fae5e6;
+            color: #0c04f1;
+        }
+        #cont2 .left .btn2:hover {
+            background-color: #fae5e6;
+            border:1px solid #fae5e6;
+            color: #0c04f1;
+        }
+        #cont2 .left .btn3:hover {
+            background-color: #fae5e6;
+            border:1px solid #fae5e6;
+            color: #0c04f1;
+        }
+        #cont2 .left .btn2 {
+            width: 250px;
+            height: 50px;
+            background-color: #04c9c9;
+            font-weight: bold;
+            margin: 10px;
+            border-radius: 10px;
+            border: 1px solid  #04c9c9;
+            font-size: large;
+            cursor: pointer;
+            transition: 0.2s;
+            color: #fff;
+        }
+        #cont2 .left .btn3 {
+            width: 250px;
+            height: 50px;
+            font-weight: bold;
+            margin: 10px;
+            background-color:#c5c500;
+            border-radius: 10px;
+            border: 1px solid  #c5c500;
+            font-size: large;
+            cursor: pointer;
+            transition: 0.2s;
+            color: #fff;
+        }
+        #cont2 .left .logo i{
+            font-size: 50px;
+            color: red;
+        }
+        #cont2 .left .btn i{
+            font-size:29px;
+            color: red;
+        }
+        /* RIGHT */
+        #cont2 .right {
+            width: 60%;
+            height: 760px;
+        }
+        #cont2 .right .top{
+            width: 100%;
+            height: 350px;
+            display: flex;
+            text-align: center;
+        }
+        #cont2 .right .top div{
+            width: 50%;
+            height: 350px;
+        }
+        #cont2 .right .buttom{
+            width: 100%;
+            height: 350px;
+            display: flex;
+            text-align: center;
+        }
+        #cont2 .right .buttom div{
+            width: 50%;
+            height: 350px;
+        }
+        #cont2 .right img {
+            width: 170px;
+        }
+        /* 3RD CONT */
+        .numberstaff {
+            width: 100%;
+            height: 130px;
+            background-color: chocolate;
+        }
+        .numberstaff h2 {
+            text-align: center;
+            color: #fff;
+        }
+        .numberstaff .numstff {
+            width: 100%;
+            height: 35px;
+            display: flex;
+            font-size: xx-large;
+            color: #fff;
+            justify-content: space-around;
+        }
+        .numberstaff .numbed {
+            width: 100%;
+            height: 40px;
+            display: flex;
+            font-size: x-large;
+            color: #fff;
+            justify-content: space-around;
+        }
+        .numberstaff .numstff ul{
+            gap: 210px;
+        }
+        .numberstaff .numbed ul {
+            gap: 140px;
+        }
+        nav ul .active a {
+            background-color: #ec7e7e;
+            border-radius: 4px;
+            color: #fff;
+        }
+        /* FOOTER PART */
+        footer {
+            width: 100%;
+            height: 120px;
+            background-color: #383535;
+            display: flex;
+            justify-content: center;
+        }
+        footer .foot {
+            width: 31%;
+            height: 120px;
+            /* background-color: #03d314;
+            border: 2px solid black; */
+        }
+        footer .social i{
+            font-size: 23px; 
+        }
+        footer .social ul {
+            gap: 10px;
+            justify-content: center;
+        }
+        footer .social ul li{
+            border: 1px solid #fff;
+            padding: 10px 10px;
+            border-radius: 3px;
+            transition: 0.5s;
+        }
+        footer .social ul li:hover {
+            background-color: #f4f4f3;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer .social ul li i:hover{
+            color: #fff;
+        }
+        footer .social h3 {
+            color: #fff;
+            text-align: center;
+            margin: 15px;
+        }
+        /* 2ND */
+        footer .subscribe .box{
+            width: 300px;
+            height: 50px;
+            text-align: center;
+            padding-top: 10px;
+            border: 1px solid #fff;
+            margin: 20px auto;
+            border-radius: 4px;
+            
+        }
+        footer .subscribe h3{
+            text-align: center;
+            color: #fff;
+            padding-top:10px ;
+        }
+        footer .subscribe button{
+            padding: 5px 15px;
+            border-radius: 4px;
+            background-color: #129b9b;
+            border: 1px solid #129b9b;
+            cursor: pointer;
+            color: #ffffff;
+            font-weight: 600;
+            transition: 0.4s;
+
+        }
+        footer .subscribe button:hover {
+            background-color: #ffffff;
+            color: #000000;
+            border: 1px solid #ffffff;
+            border-radius: 5px;
+        }
+        footer .subscribe #usertext{
+            height: 30px;
+            width: 190px;
+            background-color: #383535;
+            border: none;
+            color: #fff;
+        }
+
+        footer .copy {
+            text-align: center;
+            padding-top: 40px;
+            color:#fff;
+            font-size: 60;
+        }
+        /* 3RD CONTENT */
+        /* certificate */
+        #certificate {
+            width: 100%;
+            height: 300px;
+            /* background-color: #db1a6e; */
+            text-align: center;
+        }
+        #certificate img {
+            width: 230px;
+            margin:20px 40px;
+        }
+        /* MEDIA */
+        @media(max-width:768px) {
+            #certificate img{
+                width: 120px;
+            }
+            #cont2 .left .btn1{
+                width: 140px;
+                height: 70px;
+    
+            }
+            #cont2 .left .btn2{
+                width: 140px;
+                height: 50px;
+    
+            }
+            #cont2 .left .btn3{
+                width: 140px;
+                height: 50px;
+            }
+            #cont1 .left h1{
+            font-size: 20px;
+            padding-left:0px;
+            margin-top: 45px;
+            line-height: 40px;
+            }
+            #cont1 .left button {
+            padding: 10px 20px;
+            border-radius: 20px;
+            margin-top: 30px;
+            margin-left: -100px;
+            }
+            #cont1 .right {
+            padding-top: 90px;
+            margin-right: 50px;
+            }
+            #cont1 .right iframe{
+            width: 350px;
+            height: 300px;
+            }
+            #cont1 {
+                height: 500px;
+            }
+            .logo img{
+            width: 140px;
+            }
+            ul {
+            display: flex;
+            }
+            ul li {
+            padding: 0px;
+            }
+            #cont2 .right img {
+            width: 120px;
+            }
+            #cont2 .right h1 {
+                font-size:20px ;
+            }
+            #cont2 .right h2{
+                font-size: 20px;
+            }
+            #cont2 .right p{
+                font-size: 15px;
+            }
+            #cont2 .right {
+                margin-top: 80px;
+            }
+            .numberstaff h2 {
+                font-size: 20px;
+    
+            }
+            .numberstaff .numstff {
+            width: 100%;
+            font-size: large;
+            justify-content: space-between;
+            }
+            .numberstaff .numbed {
+            width: 100%;
+            height: 40px;
+            display: flex;
+            font-size: large;
+            justify-content: space-between;
+            margin: auto;
+            }
+            .numberstaff .numstff ul{
+            gap: 120px;
+            }
+            .numberstaff .numbed ul {
+            gap: 10px;
+            }
+            footer {
+            display: inline-block;
+            height: auto;
+            }
+            footer .foot {    
+            width: 100%;
+            height: 120px;
+            }
+           }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+     <nav>
+        <div class="logo">
+            <img src="https://srivisista.com/wp-content/uploads/2020/04/cropped-Sri-Visista-NABH-Logo-PNG-e1588160167169.png" alt="logo">
+        </div>
+        <ul id="homebar">
+            <li class="active"><a href="https://www.jiocinema.com/" target="_blank">Home</a></li>
+            <li><a href="https://www.instagram.com/" target="_blank">About</a></li>
+            <li><a href="https://arceusx.net/" target="_blank">Doctors</a></li>
+            <li><a href="https://arceusx.net/" target="_blank">Specialites</a></li>
+            <li><a href="https://arceusx.net/" target="_blank">Blog</a></li>
+            <li><a href="https://arceusx.net/" target="_blank">Contact</a></li>
+            <li><i class="fa-solid fa-magnifying-glass"></i></li>
+        </ul>
+     </nav>
+    </header>
+    <!-- 1ST CONTENT -->
+    <div id="cont1">
+        <div class="left">
+            <h1>PROVIDING TOTAL <br>
+                CARE FOR YOU</h1>
+            <br>
+            <button>Click Here</button>
+        </div>
+        <div class="right">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/QJhBeL6afgg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <!-- 2ND CONTENT -->
+    <div id="cont2">
+        <div class="left">
+            <button class="btn btn1"><i class="fa-solid fa-calendar-check"></i>Make An Appointment</button> <br>
+            <button class="btn btn2"><i class="fa-sharp fa-solid fa-circle-question"></i>Ask A Question</button> <br>
+            <button class="btn btn3"><i class="fa-sharp fa-solid fa-house"></i>Covid 19 care</button> <br>
+            <br>
+            <div class="logo">
+            <i class="fa-solid fa-business-time"></i>
+            <br> <br>
+            <h2>Opening Hours</h2>
+            <br>
+            <p>Mon - Sat : 10.00 AM - 08.00 PM <br>
+             Sunday : 10.00 AM - 02.00 PM</p>
+             <br>
+             <i class="fa-sharp fa-solid fa-phone"></i>
+             <br> <br>
+             <h2>Need Some Help?</h2>
+              <br>
+              <p>Call us 24/7 : +91-9533266113</p>
+            </div>
+        </div>
+        <div class="right">
+            <H1>OUR EXPERTISE</H1>
+            <br>
+            <div class="top">
+                <div>
+                    <img src="https://drive.google.com/uc?id=16rKx4gwvj-_-VlABvfd1ZBI7O0NcQSkt" alt="pacha">
+                    <h2>Panchakarma</h2>
+                    <p>The name Panchakarma literally means "Five Actions" the body namely Vamanam,Virechanam , Niruham, Anuvaasan, Nasyam.</p>
+                </div>
+                <div>
+                    <img src="https://drive.google.com/uc?id=1KHI3ozjZ3EMVGkznXPFQU3ql_sLi05S9" alt="pancha2">
+                    <h2>Anorectal Disorders</h2>
+                    <p>Great Indian Surgeon Sushruta has narrated in his teachings the use of Kshara for cure of fistula in ano and other anorectal diseases.</p>
+                </div>
+            </div>
+            <div class="buttom">
+                <div>
+                    <img src="https://drive.google.com/uc?id=1Oc98PFXpM4YYUPCZD0U4hdYm2722olQ0" alt="panch3">
+                    <h2>Infertility</h2>
+                    <p>From 1997 suggest that worldwide about 5% of all heterosexual couples have an unresolved problem with infertility.</p>
+                </div>
+                <div>
+                    <img src="https://drive.google.com/uc?id=1uW9ez-9hONMAsE8UuOQTlO2it6dHceIF" alt="panch4">
+                    <h2>Koumara Bhritya</h2>
+                    <p>It deals with the diagnosis and treatment of diseases related to Pregnancy, childbirth (delivery) and diseases of children (Pediatrics)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 3RD CONT -->
+    <!-- No Patent -->
+    <div class="numberstaff">
+        <h2>Over 7 years, providing you premium health care in a family-friendly environment.</h2>
+        <div class="numstff">
+            <ul>
+                <li>25</li>
+                <li>40</li>
+                <li>161550</li>
+                <li>19</li>
+            </ul>
+        </div>
+        <div class="numbed">
+            <ul>
+                <li>Patent Beds</li>
+                <li>Qualified All Staff</li>
+                <li>Satisfied All Patients</li>
+                <li>Departments</li>
+            </ul>
+        </div>
+    </div>
+    <!-- 4 CONTENT -->
+    <!-- CERTIFICATE OF EXCELLENCE -->
+    <div id="certificate">
+        <img src="https://drive.google.com/uc?id=1T5josPeoPP0rvlMLS2oJMHqR21Bm87z6" alt="img1">
+        <img src="https://drive.google.com/uc?id=1us1p56G5pIhPVN5zuESEVi4z1QOkiFHy" alt="img2">
+        <img src="https://drive.google.com/uc?id=1oz-FBXDk-ZBdfwv_Skd2jGF8wRrjrSu3" alt="img3">
+        <img src="https://drive.google.com/uc?id=1jjsPXuOpKhiSgCIdUN8inH0iRQ5wL33B" alt="img4">
+    </div>
+    <!-- FOOTER PART -->
+    <footer>
+        <div class="foot copy">
+            <p>@Copyright 2023 - Sri Visista Super Speciality Ayurveda <br>
+                Developed By Brand Mappers</p>
+        </div>
+        <div class="foot subscribe">
+            <h3>Get Latest Updates & News</h3>
+            <div class="box"><input type="text" id="usertext" placeholder="Your Email"> <button>Sumbit</button></div>
+        </div>
+        <div class="foot social">
+            <h3>Follow Us</h3>
+            <ul>
+                <li> <i class="fa-brands fa-facebook" style="color: #2a5ff1;"></i> </a>
+                <li><i class="fa-brands fa-instagram" style="color: #db1a6e;"></i></li>
+                <li><i class="fa-brands fa-twitter" style="color: #2c90dd;"></i></li>
+                <li><i class="fa-brands fa-youtube" style="color: #c80e0e;"></i></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
